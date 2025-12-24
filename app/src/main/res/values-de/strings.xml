@@ -1,0 +1,32 @@
+<resources>
+    <string name="my_reminders">Meine Erinnerungen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="selected_count">%1$d ausgewählt</string>
+    <string name="no_description">Keine Beschreibung</string>
+    <string name="status_passed">Erledigt</string>
+    <string name="status_upcoming">Bald</string> <string name="sort_all">Alle (Standard)</string>
+    <string name="sort_upcoming">Anstehend</string>
+    <string name="sort_past">Vergangen</string>
+    <string name="sort_date_asc">Datum (aufsteigend)</string>
+    <string name="sort_date_desc">Datum (absteigend)</string>
+
+    <string name="empty_upcoming">Keine anstehenden Erinnerungen</string>
+    <string name="empty_past">Keine vergangenen Erinnerungen</string>
+    <string name="empty_general">Keine Erinnerungen</string>
+
+    <string name="footer_singular">%1$d Erinnerung</string>
+    <string name="footer_plural">%1$d Erinnerungen</string>
+    <string name="footer_split">%1$d %2$s von %3$d</string>
+
+    <string name="new_reminder">Neue Erinnerung</string>
+    <string name="edit_reminder">Erinnerung bearbeiten</string>
+    <string name="title_label">Titel</string>
+    <string name="description_label">Beschreibung</string>
+    <string name="add_action">Hinzufügen</string>
+    <string name="save_action">Speichern</string>
+
+    <string name="default_reminder_title">Erinnerung</string>
+    <string name="channel_name">Erinnerungen</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_snooze">+1 Std.</string>
+</resources>

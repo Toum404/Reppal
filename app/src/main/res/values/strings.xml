@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Reppal</string>
+    <string name="my_reminders" tools:ignore="MissingTranslation">My Reminders</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="selected_count" tools:ignore="MissingTranslation">%1$d selected</string>
+    <string name="no_description" tools:ignore="MissingTranslation">No description</string>
+    <string name="status_passed" tools:ignore="MissingTranslation">Passed</string>
+    <string name="status_upcoming" tools:ignore="MissingTranslation">Next</string>
+
+    <string name="sort_all" tools:ignore="MissingTranslation">All (default)</string>
+    <string name="sort_upcoming" tools:ignore="MissingTranslation">Upcoming</string>
+    <string name="sort_past" tools:ignore="MissingTranslation">Past</string>
+    <string name="sort_date_asc" tools:ignore="MissingTranslation">Date (ascending)</string>
+    <string name="sort_date_desc" tools:ignore="MissingTranslation">Date (descending)</string>
+
+    <string name="empty_upcoming" tools:ignore="MissingTranslation">No upcoming reminders</string>
+    <string name="empty_past" tools:ignore="MissingTranslation">No past reminders</string>
+    <string name="empty_general" tools:ignore="MissingTranslation">No reminders</string>
+
+    <string name="footer_singular" tools:ignore="MissingTranslation">%1$d reminder</string>
+    <string name="footer_plural" tools:ignore="MissingTranslation">%1$d reminders</string>
+    <string name="footer_split" tools:ignore="MissingTranslation">%1$d %2$s out of %3$d</string>
+
+    <string name="new_reminder" tools:ignore="MissingTranslation">New Reminder</string>
+    <string name="edit_reminder" tools:ignore="MissingTranslation">Edit Reminder</string>
+    <string name="title_label" tools:ignore="MissingTranslation">Title</string>
+    <string name="description_label" tools:ignore="MissingTranslation">Description</string>
+    <string name="add_action" tools:ignore="MissingTranslation">Add</string>
+    <string name="save_action" tools:ignore="MissingTranslation">Save</string>
+
+    <string name="default_reminder_title" tools:ignore="MissingTranslation">Reminder</string>
+    <string name="channel_name" tools:ignore="MissingTranslation">Reminders</string>
+    <string name="action_delete" tools:ignore="MissingTranslation">Delete</string>
+    <string name="action_snooze" tools:ignore="MissingTranslation">Add 1h</string>
+</resources>

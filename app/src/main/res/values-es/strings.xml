@@ -1,0 +1,34 @@
+<resources>
+    <string name="my_reminders">Mis Recordatorios</string>
+    <string name="cancel">Cancelar</string>
+    <string name="selected_count">%1$d seleccionado(s)</string>
+    <string name="no_description">Sin descripción</string>
+    <string name="status_passed">Pasado</string>
+    <string name="status_upcoming">Pronto</string>
+
+    <string name="sort_all">Todos (por defecto)</string>
+    <string name="sort_upcoming">Próximos</string>
+    <string name="sort_past">Pasados</string>
+    <string name="sort_date_asc">Fecha (ascendente)</string>
+    <string name="sort_date_desc">Fecha (descendente)</string>
+
+    <string name="empty_upcoming">No hay recordatorios próximos</string>
+    <string name="empty_past">No hay recordatorios pasados</string>
+    <string name="empty_general">No hay recordatorios</string>
+
+    <string name="footer_singular">%1$d recordatorio</string>
+    <string name="footer_plural">%1$d recordatorios</string>
+    <string name="footer_split">%1$d %2$s de %3$d</string>
+
+    <string name="new_reminder">Nuevo recordatorio</string>
+    <string name="edit_reminder">Editar recordatorio</string>
+    <string name="title_label">Título</string>
+    <string name="description_label">Descripción</string>
+    <string name="add_action">Añadir</string>
+    <string name="save_action">Guardar</string>
+
+    <string name="default_reminder_title">Recordatorio</string>
+    <string name="channel_name">Recordatorios</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_snooze">+1 hora</string>
+</resources>

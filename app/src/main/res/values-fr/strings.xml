@@ -1,0 +1,34 @@
+<resources>
+    <string name="my_reminders">Mes Rappels</string>
+    <string name="cancel">Annuler</string>
+    <string name="selected_count">%1$d sélectionné(s)</string>
+    <string name="no_description">Aucune description</string>
+    <string name="status_passed">Passé</string>
+    <string name="status_upcoming">À venir</string>
+
+    <string name="sort_all">Tous (défaut)</string>
+    <string name="sort_upcoming">À venir</string>
+    <string name="sort_past">Passés</string>
+    <string name="sort_date_asc">Date (croissant)</string>
+    <string name="sort_date_desc">Date (décroissant)</string>
+
+    <string name="empty_upcoming">Aucun rappel à venir</string>
+    <string name="empty_past">Aucun rappel passé</string>
+    <string name="empty_general">Aucun rappel</string>
+
+    <string name="footer_singular">%1$d rappel</string>
+    <string name="footer_plural">%1$d rappels</string>
+    <string name="footer_split">%1$d %2$s sur %3$d</string>
+
+    <string name="new_reminder">Nouveau rappel</string>
+    <string name="edit_reminder">Modifier le rappel</string>
+    <string name="title_label">Titre</string>
+    <string name="description_label">Description</string>
+    <string name="add_action">Ajouter</string>
+    <string name="save_action">Enregistrer</string>
+
+    <string name="default_reminder_title">Rappel</string>
+    <string name="channel_name">Rappels</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_snooze">Rajouter 1h</string>
+</resources>
