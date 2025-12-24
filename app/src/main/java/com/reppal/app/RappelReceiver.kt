@@ -78,7 +78,7 @@ class RappelReceiver : BroadcastReceiver() {
             .setContentText(desc)
             .setPriority(NotificationCompat.PRIORITY_MAX)
             .setCategory(NotificationCompat.CATEGORY_ALARM)
-            .setDefaults(NotificationCompat.DEFAULT_VIBRATE)
+            .setDefaults(NotificationCompat.DEFAULT_ALL)
 
             .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
             .setContentIntent(pendingApp)
