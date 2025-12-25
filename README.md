@@ -44,4 +44,4 @@
 ## Technical Details / Détails Techniques
 - **Minimum Android**: 8.0 (API 26)
 - **Target Android**: 15 (API 35)
-- **License**: License: MIT
+- **License**: MIT
