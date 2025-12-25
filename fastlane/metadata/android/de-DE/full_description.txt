@@ -1,5 +1,3 @@
-## Deutsch
-
 **Reppal** ist eine einfache und leichtgewichtige Erinnerungs-App. Sie ermöglicht es dir, gelegentliche Alarme für deine täglichen Aufgaben zu planen und dabei deine Daten sicher zu halten.
 
 ### Warum Reppal?

@@ -1,1 +1,1 @@
-Reppal es una aplicación de recordatorios sencilla y ligera. Te permite programar alertas ocasionales para tus tareas diarias mientras mantiene tus datos seguros.
+Simple and lightweight reminder app focused on privacy.

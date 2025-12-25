@@ -1,5 +1,3 @@
-## Français
-
 **Reppal** est une application de rappels simple et légère. Elle permet de programmer des alertes occasionnelles pour vos tâches quotidiennes tout en garantissant la sécurité de vos données.
 
 ### Pourquoi Reppal ?

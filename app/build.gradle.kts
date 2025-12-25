@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.reppal.app"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.reppal.app"

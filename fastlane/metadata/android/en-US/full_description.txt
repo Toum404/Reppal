@@ -1,5 +1,3 @@
-## English
-
 **Reppal** is a simple and lightweight reminder app. It allows you to schedule occasional alerts for your daily tasks while keeping your data safe.
 
 ### Why Reppal?
