@@ -2,7 +2,6 @@
     <string name="app_name" translatable="false">Reppal</string>
     <string name="my_reminders" tools:ignore="MissingTranslation">My Reminders</string>
     <string name="cancel" tools:ignore="MissingTranslation">Cancel</string>
-    <string name="selected_count" tools:ignore="MissingTranslation">%1$d selected</string>
     <string name="no_description" tools:ignore="MissingTranslation">No description</string>
     <string name="status_passed" tools:ignore="MissingTranslation">Passed</string>
     <string name="status_upcoming" tools:ignore="MissingTranslation">Next</string>

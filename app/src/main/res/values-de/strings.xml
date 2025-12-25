@@ -1,7 +1,6 @@
 <resources>
     <string name="my_reminders">Meine Erinnerungen</string>
     <string name="cancel">Abbrechen</string>
-    <string name="selected_count">%1$d ausgewählt</string>
     <string name="no_description">Keine Beschreibung</string>
     <string name="status_passed">Erledigt</string>
     <string name="status_upcoming">Bald</string> <string name="sort_all">Alle (Standard)</string>

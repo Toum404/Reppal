@@ -33,6 +33,7 @@ fun AddReminderSheet(
     val context = LocalContext.current
     val focusManager = LocalFocusManager.current
 
+    // 1. Initialisation propre du calendrier local
     val instantInitial = remember {
         Calendar.getInstance().apply {
             if (rappelInitial != null) {
@@ -44,10 +45,25 @@ fun AddReminderSheet(
         }
     }
 
+    // 2. CORRECTION DATE : Calcul du timestamp "fictif" UTC pour que le DatePicker affiche la bonne date locale
+    val utcInitialMillis = remember(rappelInitial) {
+        if (rappelInitial != null) {
+            rappelInitial.timestamp
+        } else {
+            val cal = Calendar.getInstance()
+            // On prend le minuit local et on compense le décalage zone pour le DatePicker (qui pense en UTC)
+            cal.set(Calendar.HOUR_OF_DAY, 0)
+            cal.set(Calendar.MINUTE, 0)
+            cal.set(Calendar.SECOND, 0)
+            cal.set(Calendar.MILLISECOND, 0)
+            cal.timeInMillis + TimeZone.getDefault().getOffset(cal.timeInMillis)
+        }
+    }
+
     var titre by remember { mutableStateOf(rappelInitial?.titre ?: "") }
     var description by remember { mutableStateOf(rappelInitial?.description ?: "") }
 
-    val datePickerState = rememberDatePickerState(initialSelectedDateMillis = instantInitial.timeInMillis)
+    val datePickerState = rememberDatePickerState(initialSelectedDateMillis = utcInitialMillis)
     val timePickerState = rememberTimePickerState(
         initialHour = instantInitial.get(Calendar.HOUR_OF_DAY),
         initialMinute = instantInitial.get(Calendar.MINUTE),
@@ -57,19 +73,30 @@ fun AddReminderSheet(
     var showDatePicker by remember { mutableStateOf(false) }
     var showTimePicker by remember { mutableStateOf(false) }
 
+    // 3. CORRECTION RÉCUPÉRATION : Fusion de la date UTC et de l'heure locale
     val currentSelectedTimestamp by remember {
         derivedStateOf {
-            Calendar.getInstance().apply {
-                timeInMillis = datePickerState.selectedDateMillis ?: instantInitial.timeInMillis
-                set(Calendar.HOUR_OF_DAY, timePickerState.hour)
-                set(Calendar.MINUTE, timePickerState.minute)
-                set(Calendar.SECOND, 0)
-                set(Calendar.MILLISECOND, 0)
-            }.timeInMillis
+            val calendar = Calendar.getInstance()
+            datePickerState.selectedDateMillis?.let { selectedUtc ->
+                val utcCal = Calendar.getInstance(TimeZone.getTimeZone("UTC")).apply {
+                    timeInMillis = selectedUtc
+                }
+                calendar.set(
+                    utcCal.get(Calendar.YEAR),
+                    utcCal.get(Calendar.MONTH),
+                    utcCal.get(Calendar.DAY_OF_MONTH)
+                )
+            }
+            calendar.set(Calendar.HOUR_OF_DAY, timePickerState.hour)
+            calendar.set(Calendar.MINUTE, timePickerState.minute)
+            calendar.set(Calendar.SECOND, 0)
+            calendar.set(Calendar.MILLISECOND, 0)
+            calendar.timeInMillis
         }
     }
 
-    val isDateTimeValid = currentSelectedTimestamp >= System.currentTimeMillis()
+    // Validation : Le rappel doit être au moins 1 minute dans le futur
+    val isDateTimeValid = currentSelectedTimestamp > System.currentTimeMillis()
     val isFormValid = titre.isNotBlank() && isDateTimeValid
 
     Column(
@@ -154,13 +181,10 @@ fun AddReminderSheet(
             Button(
                 onClick = {
                     if (isFormValid) {
-                        val finalTitre = titre.formatReminderText()
-                        val finalDescription = description.formatReminderText()
-
                         val rappelFinal = Rappel(
                             id = rappelInitial?.id ?: 0,
-                            titre = finalTitre,
-                            description = finalDescription,
+                            titre = titre.formatReminderText(),
+                            description = description.formatReminderText(),
                             timestamp = currentSelectedTimestamp
                         )
 
