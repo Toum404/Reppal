@@ -1,0 +1,11 @@
+## Français
+
+**Reppal** est une application de rappels simple et légère. Elle permet de programmer des alertes occasionnelles pour vos tâches quotidiennes tout en garantissant la sécurité de vos données.
+
+### Pourquoi Reppal ?
+* 📝 **Simple & Direct** : Créez et gérez vos rappels en quelques clics.
+* 🔒 **Vie Privée** : Aucune connexion internet requise -> Vos données restent sur votre mobile.
+* 🏃 **Légère** : Une application de petite taille qui n'alourdit pas votre système.
+* 🛠️ **Moderne** : Développée avec Jetpack Compose.
+* 🌍 **Multilingue** : Disponible en Français mais aussi en Anglais, Espagnol et Allemand (traductions IA).
+* ✨ **Actions rapides** : Ajouter directement + une heure, ou supprimer le rappel.

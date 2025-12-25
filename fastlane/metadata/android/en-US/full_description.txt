@@ -1,0 +1,11 @@
+## English
+
+**Reppal** is a simple and lightweight reminder app. It allows you to schedule occasional alerts for your daily tasks while keeping your data safe.
+
+### Why Reppal?
+* 📝 **Simple & Direct**: Create and manage your reminders in just a few taps.
+* 🔒 **Privacy First**: No internet connection required -> Your data stays on your phone.
+* 🏃 **Lightweight**: A small app size that won't slow down your system.
+* 🛠️ **Modern**: Developed with Jetpack Compose.
+* 🌍 **Multilingual**: Available in French but also in English, Spanish and German (AI translations).
+* ✨ **Quick actions**: Directly add + one hour, or delete the reminder.
