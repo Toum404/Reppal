@@ -4,8 +4,12 @@
 
 ---
 
-![Main Screen](screenshots/homescreen_dayMode.jpg) ![Add Reminder](screenshots/eventscreen_dayMode.jpg)
-![Main Screen Night](screenshots/homescreen_nightMode.jpg) ![Add Reminder Night](screenshots/eventscreen_nightMode.jpg)
+<p align="center">
+  <img src="screenshots/homescreen_dayMode.jpg" width="22%" alt="Main Screen">
+  <img src="screenshots/eventscreen_dayMode.jpg" width="22%" alt="Add Reminder">
+  <img src="screenshots/homescreen_nightMode.jpg" width="22%" alt="Main Screen Night">
+  <img src="screenshots/eventscreen_nightMode.jpg" width="22%" alt="Add Reminder Night">
+</p>
 
 ---
 
